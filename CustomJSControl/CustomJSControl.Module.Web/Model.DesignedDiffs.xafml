@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="16.1.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="ParentObject_DetailView">
+      <Items>
+        <CustomUserControlViewItemWeb Id="ChartControl" CustomControlPath="Controls/ChartControl.ascx" Caption="Chart control" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="10.674157303370787">
+            <LayoutGroup Id="ParentObject" RelativeSize="100">
+              <LayoutItem Id="Description" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Item1" CaptionLocation="Top" Index="1" RelativeSize="89.325842696629209" IsNewNode="True">
+            <LayoutGroup Id="ChildObjects_Group" ShowCaption="True" Caption="Child Objects" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="ChildObjects" ViewItem="ChildObjects" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" Caption="Chart control" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="ChartControl" ViewItem="ChartControl" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="ChildObjects_Group" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
